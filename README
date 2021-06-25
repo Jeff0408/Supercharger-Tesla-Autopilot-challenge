@@ -1,0 +1,29 @@
+#Goal to achieve
+Your objective is to construct a search algorithm to find the minimum time path through the tesla
+network of supercharging stations. 
+
+#Included file
+1.netwoek.h
+2.network.cpp
+3.main.cpp
+
+#Compile
+$ g++ -std=c++11 -O1 main.cpp network.cpp -o candidate_solution
+
+$ ./candidate_solution Council_Bluffs_IA Cadillac_MI
+
+        will return:
+
+	Council_Bluffs_IA Worthington_MN 2.485418 Albert_Lea_MN 1.351711 Mauston_WI 1.342873 Sheboygan_WI 1.690717 Cadillac_MI
+	
+## check by checker	
+	
+	./checker_linux "Council_Bluffs_IA Worthington_MN 2.485418 Albert_Lea_MN 1.351711 Mauston_WI 1.342873 Sheboygan_WI 1.690717 Cadillac_MI"
+
+       will return 
+	
+	Finding Path Between Council_Bluffs_IA and Cadillac_MI
+	Reference result: Success, cost was 17.2531
+	Candidate result: Success, cost was 17.2929
+
+
